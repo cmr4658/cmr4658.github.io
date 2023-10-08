@@ -287,6 +287,40 @@ img {
     margin: auto;
 }
 
+/* || Form */
+
+form {
+    padding: 3rem;
+    align-self: center;
+    background-color: #f6dc9b;
+    box-shadow: 8px 8px 1px #374454;
+    border: 2px solid #374454;
+    border-radius: 1%;
+    width: 50%;
+}
+
+form ul li {
+    display: flex;
+    padding: 0.5rem;
+}
+
+form ul li *:first-child {
+    width: 25%;
+}
+
+form ul li *:last-child {
+    width: 75%;
+    padding: 0.5rem;
+}
+
+button[type="submit"]{
+    margin-top: 1rem;
+}
+
+textarea {
+    height: 8rem;
+}
+
 /* || Footer */
 
 footer {
