@@ -215,7 +215,7 @@ header, footer {
 nav ul {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 2rem;
 }
 
 nav ul li {
@@ -227,7 +227,10 @@ nav ul li a {
     color: #F4F1DE;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
+    min-width: 100px;
+    min-height: 32px;
 }
 
 .current {
