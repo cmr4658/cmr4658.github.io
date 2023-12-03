@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chase Rigby | UX Research Portfolio | Projects</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ed185f5b0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!-- Logo -->
+
+        <a class="logo" href="index.html">
+            <img src="images/logo_off_white.png" alt="Chase Rigby, UX Research">
+            <div>
+                <span>Chase Rigby</span>
+                <span class="quiet">UX Research</span>
+            </div>
+        </a>
+
+        <!-- Nav group -->
+
+        <nav>
+            <ul>
+                <li><a href="about.html"><i class="fa-regular fa-face-smile" aria-hidden="true"></i>About me</a></li>
+                <li><a class="current" href="projects.html"><i class="fa-regular fa-file-lines" aria-hidden="true"></i>Projects</a></li>
+                <li><a class="cta cta-solid" href="contact.html"><i class="fa-regular fa-paper-plane" aria-hidden="true"></i>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+
+    <main>
+        <article class="article-wrapper">
+            <div>
+                <h1>Project Gutenberg</h1>
+                <p class="subtitle">UI Redesign</p>
+            </div>
+
+            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fd4me0nd7eR6j2BF1PDgLjK%2FProject-Gutenberg-UI-Redesign%3Fpage-id%3D358%253A467%26type%3Ddesign%26node-id%3D358-468%26viewport%3D705%252C287%252C0.17%26t%3D3WkHDH5vyRftSrUw-1%26scaling%3Dmin-zoom%26starting-point-node-id%3D358%253A468%26mode%3Ddesign" title="Figma prototype for Project Gutenberg redesign" allowfullscreen></iframe>
+
+            <section>
+                <h2 id="project-overview">Project Overview</h2>
+                    <p>Project Gutenberg is an online library of free, public domain eBooks. It's an important resource for literature lovers around the world (and a website I use frequently!) but there are some areas where the user experience could be improved. My hope is that redesigning the interface could make it easier for users to understand what Project Gutenberg is about and find the books they want to read.</p>
+                
+                <h3>Client</h3>
+                    <p>Prof. Daniel Kramer (Course Instructor)</p>
+                <h3>Team</h3>
+                    <ul>
+                        <li>Chase Rigby (Designer)</li>
+                    </ul>
+                <h3>Timeline</h3>
+                    <p>8 weeks, 3-6 hours/week</p>
+                <h3>Process</h3>
+                    <ol>
+                        <li>Heuristic evaluation</li>
+                        <li>Low-fidelity prototyping</li>
+                        <li>High-fidelity prototyping</li>
+                        <li>Final design</li>
+                    </ol>
+            </section>
+            
+            <section>
+                <h2 id="heuristic-evaluation">Heuristic Evaluation</h2>
+                    <p>I used <a href="https://www.nngroup.com/articles/ten-usability-heuristics/">Jakob Nielsen's 10 Usability Heuristics</a> to evaluate the Project Gutenberg website. These were the heuristic violations I decided to address in the redesign:</p>
+
+                <h3>Recognition rather than recall</h3>
+                <blockquote>Minimize the user's memory load by making elements, actions, and options visible. The user should not have to remember information from one part of the interface to another. Information required to use the design (e.g. field labels or menu items) should be visible or easily retrievable when needed.</blockquote>
+                <p>Project Gutenberg is (naturally) a very text-heavy website, which isn't a bad thing. However, the amount of text on the home page might make it difficult for users to find frequently-used actions (like browsing and advanced search) or even to understand what they can do on the website.</p>
+                <h4>Next steps</h4>
+                <p>Reorder the content on the home page so important and frequently-used options are near the top. Also, remove extraneous text to keep the page focused.</p>
+
+                <h3>Consistency and standards</h3>
+                <blockquote>Users should not have to wonder whether different words, situations, or actions mean the same thing. Follow platform and industry conventions.</blockquote>
+                <p>Project Gutenberg is mostly consistent between pages, but the horizontal layout of the search results page sticks out for two reasons:</p>
+                <ul>
+                    <li>It looks different from any other page on the website (i.e., it lacks <em>internal</em> consistency)</li>
+                    <li>It looks different than most other library search results pages (i.e., it lacks <em>external</em> consistency)</li>
+                </ul>
+                <h4>Next steps</h4>
+                <p>Changing the search results page to a vertical layout would make it easier for new users to learn the interface.</p>
+
+                <h3>Help and documentation</h3>
+                <blockquote>Help and documentation content should be easy to search and focused on the user's task. Keep it concise, and list concrete steps that need to be carried out.</blockquote>
+                <p>There is actually quite a bit of documentation available on Project Gutenberg's website, but it's spread across dozens of pages, and it can be difficult to search. In the few instances where in-context help is provided, the help text could be more specific.</p>
+                <h4>Next steps</h4>
+                <p>Adding in-context help text would make the search functions easier to use and improve the cognitive accessibility of the website.</p>
+            </section>
+
+            <section>
+                <h2 id="design-iterations">Design Iterations</h2>
+                
+                <h3>Home page</h3>
+                <p>Since one of my main goals for the redesigned home page was to locate the most frequently-used actions at the top, my first prototype was actually of the information architecture and not the visual design. It was very helpful to have this already figured out when I started with the visual prototype!</p>
+                <p>The color scheme in my first visual prototype was eyedropped from the actual website, but it ended up making the design look muddled. I decided to work in grayscale instead and apply color once the values were right.</p>
+
+                <h3>Search</h3>
+                <p>I used the <a href="https://www.lib.utexas.edu/">UT Libraries</a> search results page as inspiration. Aside from changing the layout from horizontal to vertical, I also moved the search filters into a sidebar to distinguish them from the actual search results. Finally, I added in-context help buttons to the search fields and filters.</p>
+
+                <h3>Top 100 (Browsing)</h3>
+                <p>The original version of this page required so much vertical scrolling that it was difficult to navigate. Reorganizing the results into a table helped make better use of horizontal space while making it clear which section was what.</p>
+            </section>
+
+            <section>
+                <h2 id="reflections">Reflections</h2>
+
+                <p>This UI redesign project gave me many opportunities to improve my Figma prototyping skills, and I'm happy with how it came out overall.</p>
+                <p>One of the most important lessons I learned was to work in grayscale first (unless you're working with an established design system). Because I tried to add in color too early, I ended up putting in a lot of unnecessary effort trying to make the design work before I had really established the foundations. Taking a step back allowed me to see where the issues were, decide on the values I wanted, and create a final color scheme that reads well and is accessible. The US Web Design System's page on <a href="https://designsystem.digital.gov/design-tokens/color/overview/">using color</a> was a great resource.</p>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="quiet">
+            Made with 
+            <i class="fa-solid fa-heart" aria-hidden="true"></i> 
+            <span class="fa-sr-only">love</span>
+            by Chase
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/chase-rigby-72454648/" title="Connect with me on LinkedIn">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
