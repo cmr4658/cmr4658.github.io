@@ -370,8 +370,8 @@ nav ul li a {
 }
 
 .card-top {
-    display: inherit;
-    flex-direction: inherit;
+    display: flex;
+    flex-direction: column;
     align-items: inherit;
 }
 
@@ -396,7 +396,7 @@ nav ul li a {
     display: flex;
     flex-flow: row wrap;
     gap: 3rem;
-    width: 75%;
+    width: 100%;
 }
 
 /* || Images */
