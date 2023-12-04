@@ -158,20 +158,91 @@ blockquote {
 
 /* || For case studies */
 
+iframe {
+    margin: auto;
+}
+
 .article-wrapper {
     display: flex;
     flex-direction: column;
     align-self: center;
-    gap: 2rem;
+    gap: 3rem;
     padding: 5rem;
-    max-width: 1000px;
+    max-width: 1200px;
 }
 
 .article-wrapper li {
     margin-left: 2rem;
 }
 
+.article-wrapper section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
 
+.project-details {
+    display: flex;
+}
+
+.project-details div {
+    flex: 1;
+}
+
+.project-section {
+    padding: 2rem;
+    background-color: #f6dc9b;
+    box-shadow: 8px 8px 1px #374454;
+    border: 2px solid #374454;
+    border-radius: 1%;
+}
+
+.project-section h3 {
+    border-bottom: 1px solid #374454;
+}
+
+.two-col {
+    display: flex;
+    gap: 3rem;
+}
+
+.two-col div {
+    width: 50%;
+    margin: auto;
+}
+
+.two-col img {
+    margin: 0;
+    border: thin #374454 solid;
+}
+
+.image-gallery {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.image-gallery img {
+    margin: 0;
+    object-fit: cover;
+}
+
+.image-gallery figure {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+    max-width: 640px;
+}
+
+.image-gallery figcaption {
+    text-align: center;
+    background-color: #374454;
+    color: #F4F1DE;
+    padding: 0.5rem;
+}
 
 /* || Header and main nav */
 
@@ -183,14 +254,14 @@ header, footer {
     width: 100%;
 
     background-color: #374454;
-    color: #F4F1DE;
+    color: #FDFDF7;
 }
 
 .logo {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    color: #F4F1DE;
+    color: #FDFDF7;
     text-decoration: none;
 }
 
@@ -224,7 +295,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #F4F1DE;
+    color: #FDFDF7;
     display: flex;
     align-items: center;
     justify-content: center;
